@@ -141,4 +141,20 @@ header .btn-get-started:hover {
   background-color: #da915a;
   color: #fff;
 }
+
+.section-network {
+  background-color: #fff;
+  margin-top: -170px;
+  padding-top: 240px;
+  padding-bottom: 50px;
+}
+
+.section-network h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.section-network img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
