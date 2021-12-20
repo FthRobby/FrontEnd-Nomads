@@ -9,6 +9,9 @@
     />
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/xzoom/xzoom.css" />
+    <link rel="stylesheet" href="assets/xzoom/xzoom.min.css" />
+
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -99,10 +102,61 @@
               <div class="card card-details">
                 <h1>Nusa Penida</h1>
                 <p>Republic of Indonesia Raya</p>
-                <div class="gallery"></div>
+                <div class="gallery">
+                  <div class="xzoom-container">
+                    <img
+                      src="assets/images/details_page/details-1.jpg"
+                      class="xzoom"
+                      id="xzoom-default"
+                      xoriginal="assets/images/details_page/details-1.jpg"
+                    />
+                  </div>
+                  <div class="xzoom-thumbs">
+                    <a href="assets/images/details_page/details-1.jpg">
+                      <img
+                        src="assets/images/details_page/details-1.jpg"
+                        class="xzoom-gallery"
+                        width="128"
+                        xpreview="assets/images/details_page/details-1.jpg"
+                      />
+                    </a>
+                    <a href="assets/images/details_page/details-1.jpg">
+                      <img
+                        src="assets/images/details_page/details-1.jpg"
+                        class="xzoom-gallery"
+                        width="128"
+                        xpreview="assets/images/details_page/details-1.jpg"
+                      />
+                    </a>
+                    <a href="assets/images/details_page/details-1.jpg">
+                      <img
+                        src="assets/images/details_page/details-1.jpg"
+                        class="xzoom-gallery"
+                        width="128"
+                        xpreview="assets/images/details_page/details-1.jpg"
+                      />
+                    </a>
+                    <a href="assets/images/details_page/details-1.jpg">
+                      <img
+                        src="assets/images/details_page/details-1.jpg"
+                        class="xzoom-gallery"
+                        width="128"
+                        xpreview="assets/images/details_page/details-1.jpg"
+                      />
+                    </a>
+                    <a href="assets/images/details_page/details-1.jpg">
+                      <img
+                        src="assets/images/details_page/details-1.jpg"
+                        class="xzoom-gallery"
+                        width="128"
+                        xpreview="assets/images/details_page/details-1.jpg"
+                      />
+                    </a>
+                  </div>
+                </div>
                 <h2>Tentang Wisata</h2>
                 <p>
-                  Nusa Penida is an island southeast of Indonesia’s island Bali
+                  Nusa Penida is an island southeast of Indonesia's island Bali
                   and a district of Klungkung Regency that includes the
                   neighbouring small island of Nusa Lembongan. The Badung Strait
                   separates the island and Bali. The interior of Nusa Penida is
@@ -218,5 +272,16 @@
     <script src="assets/js/jquery.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/retina.min.js"></script>
+    <script src="assets/xzoom/xzoom.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: "#333",
+          xoffset: 15,
+        });
+      });
+    </script>
   </body>
 </html>
