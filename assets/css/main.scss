@@ -300,6 +300,11 @@ header {
     }
   }
 
+  .card-right {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   .features {
     margin-top: 20px;
 
@@ -340,6 +345,28 @@ header {
         border: 4px solid #1abc9c;
         box-shadow: none;
       }
+    }
+  }
+
+  .member {
+    .member-image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .join-container {
+    margin-top: -16px;
+  }
+
+  .btn-join-now {
+    background-color: #dd6f1a;
+    color: #fff;
+    border-radius: 0;
+
+    &:hover {
+      background-color: #da915a;
+      color: #fff;
     }
   }
 }
