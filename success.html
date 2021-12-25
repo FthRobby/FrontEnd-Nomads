@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/xzoom/xzoom.css" />
+    <link rel="stylesheet" href="assets/xzoom/xzoom.min.css" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css"
+    />
+
+    <title>Nomads | checkout</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+          <a href="index.html" class="navbar-brand">
+            <img src="assets/images/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <ul class="navbar-nav mr-auto d-none d-lg-block">
+          <li>
+            <span class="text-muted">
+              | &nbsp; Beyond the explorer of the world
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- main content -->
+    <main>
+      <div class="section-success d-flex align-items-center">
+        <div class="col text-center">
+          <img src="assets/images/ic_mail.png" alt="" />
+          <h1>Yay! Success</h1>
+          <p>
+            We've sent you email for trip instruction <br />
+            please read it is well
+          </p>
+          <a href="./index.html" class="btn btn-ts mt-3 px-5"> Home Page </a>
+        </div>
+      </div>
+    </main>
+    <!-- end main -->
+
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/retina.min.js"></script>
+    <script src="assets/xzoom/xzoom.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".xzoom, .xzoom-gallery").xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: "#333",
+          xoffset: 15,
+        });
+
+        $(".datepicker").datepicker({
+          uiLibrary: "bootstrap4",
+          icons: {
+            rightIcon: '<img src="assets/images/ic_doe.png" />',
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
